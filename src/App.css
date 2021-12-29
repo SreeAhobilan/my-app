@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+.App{
+    margin: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    justify-items: stretch;
+    padding: 1rem;
+    place-items: center;
+    overflow: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+    text-align: center;
+    font-family: 'Shizuru', cursive;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.overall{
+    border:transparent;
+    border-radius: 20px;
+    max-width: 70rem;
+    width:70%;
+    display: grid;
+    background-color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    background: url("https://wallpaperaccess.com/full/1489353.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
-
-.App-link {
-  color: #61dafb;
+.tasks-status-container{
+    padding: 20px ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTask{
+    display: grid;
+    width: 50%;
+}
+.head{
+    display: grid;
+    align-content: center;
+    padding-left: 20px;
+}
+.task-status{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(6rem,1fr));
+    align-content: center;
+    overflow: auto;
 }
